@@ -1,0 +1,15 @@
+@import url(pendulumclock.css);
+@import url(standardClock.css);
+@import url(blockClock.css);
+
+body{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: hsla(186, 33%, 94%, 1);
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ebf4f5", endColorstr="#b5c6e0", GradientType=1 );
+}

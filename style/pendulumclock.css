@@ -1,0 +1,77 @@
+.pendulumClock{
+  position: relative;
+    height: 300px;
+    width: 300px;
+    border: 15px double #524948;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #797767;
+    box-shadow: 33px 8px 24px 0px rgba(66, 68, 90, 0.52);
+  }
+  .pendulumClock .clockCircle{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background: #C7D2A5 url("https://img.myloview.pl/fototapety/tarcza-zegara-czarny-pusty-zegar-z-cyframi-rzymskimi-700-106905691.jpg") no-repeat center center;
+    background-size: 230px 230px;
+    border: 4px solid #524948;
+    border-radius: 50%;
+    justify-content: center;
+    box-shadow: 5px 5px 50px 5px #524948;
+  }
+  .pendulumClock .hourClockHand{
+    height: 120px;
+    width: 3px;
+    position: absolute;
+  }
+  .pendulumClock .minuteClockHand{
+    height: 160px;
+    width: 5px;
+    position: absolute;
+  }
+  .pendulumClock .hours{
+    height: 50px;
+    width: 2px;
+    background: black;
+    position: absolute;
+    left: 98.5px;
+    top: 50px;
+    transform-origin: 0% 100%;
+  }
+  .pendulumClock .minutes{
+    height: 70px;
+    width: 5px;
+    background: black;
+    position: absolute;
+    left: 97.5px;
+    top: 30px;
+    transform-origin: 0% 100%;
+  }
+  .pendulum{
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform-origin: 100% 0;
+    height: 80px;
+    width: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: black;
+    animation: movePendulum 2s infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes movePendulum{
+    0%{transform: rotate(-45deg)}
+    50%{transform: rotate(45deg)}
+    100%{transform: rotate(-45deg)}
+  }
+  .pendulumClock .circle{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: black;
+    top: 70px;
+    left: -11px;
+  }

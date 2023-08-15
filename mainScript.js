@@ -4,36 +4,27 @@ function standardClock() {
     const minute = currentTime.getMinutes();
     const second = currentTime.getSeconds();
 
-    const hourHand = document.querySelector('.hours-hand');
-    const minuteHand = document.querySelector('.minutes-hand');
-    const secondHand = document.querySelector('.seconds-hand');
-
     const hourRotation = (hour * 30) + (minute / 2);  
     const minuteRotation = (minute * 6) + (second / 10);  
     const secondRotation = second * 6;  
 
-    hourHand.style.transform = `rotate(${hourRotation}deg)`;
-    minuteHand.style.transform = `rotate(${minuteRotation}deg)`;
-    secondHand.style.transform = `rotate(${secondRotation}deg)`;
-  }
-  setInterval(standardClock, 1000);
+    document.querySelector('.hours-hand').style.transform = `rotate(${hourRotation}deg)`;
+    document.querySelector('.minutes-hand').style.transform = `rotate(${minuteRotation}deg)`;
+    document.querySelector('.seconds-hand').style.transform = `rotate(${secondRotation}deg)`;
 
-  function pendulumClock(){
-    const currentTime = new Date();
-    const hour = currentTime.getHours();
-    const minutes = currentTime.getMinutes();
-    
-    const hourHand = document.querySelector('.pendulumClock .hours');
-    const minutesHand = document.querySelector('.pendulumClock .minutes');
-    
-    const hourRotation = (hour * 30)+(minutes / 2) + 'deg';
-    const minuteRotation = (minutes * 6) + 'deg';
+    document.querySelector('.hoursPendulum').style.transform = `rotate(${hourRotation}deg)`;
+    document.querySelector('.minutesPendulum').style.transform = `rotate(${minuteRotation}deg)`;
   
-    hourHand.style.transform = `rotate(hourRotation)`;
-    minutesHand.style.transform = `rotate(minuteRotation)`;
+    document.querySelector('.secondStandard .hours-hand').style.transform = `rotate(${hourRotation}deg)`;
+    document.querySelector('.secondStandard .minutes-hand').style.transform = `rotate(${minuteRotation}deg)`;
+    document.querySelector('.secondStandard .seconds-hand').style.transform = `rotate(${secondRotation}deg)`;
+
+    document.querySelector('.thirdStandard .hours-hand').style.transform = `rotate(${hourRotation}deg)`;
+    document.querySelector('.thirdStandard .minutes-hand').style.transform = `rotate(${minuteRotation}deg)`;
     
   }
-  setInterval(pendulumClock, 1000);
+
+  setInterval(standardClock, 500);
   
   function blockClock(){
     const tableOfMonths = [1,2,3,4,5,6,7,8,9,10,11,12];
@@ -67,4 +58,3 @@ function standardClock() {
 
 blockClock();
 standardClock();
-pendulumClock();

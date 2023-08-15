@@ -1,7 +1,8 @@
 .pendulumClock{
+  margin-bottom:80px;
   position: relative;
-    height: 300px;
-    width: 300px;
+    height: 260px;
+    width: 260px;
     border: 15px double #524948;
     display: flex;
     justify-content: center;
@@ -30,48 +31,48 @@
     width: 5px;
     position: absolute;
   }
-  .pendulumClock .hours{
+  .pendulumClock .hoursPendulum{
     height: 50px;
-    width: 2px;
-    background: black;
-    position: absolute;
-    left: 98.5px;
-    top: 50px;
-    transform-origin: 0% 100%;
-  }
-  .pendulumClock .minutes{
-    height: 70px;
     width: 5px;
     background: black;
     position: absolute;
+    left: 98.5px;
+    top: 49px;
+    transform-origin: 0% 100%;
+  }
+  .pendulumClock .minutesPendulum{
+    height: 70px;
+    width: 2px;
+    background: black;
+    position: absolute;
     left: 97.5px;
-    top: 30px;
+    top: 31px;
     transform-origin: 0% 100%;
   }
   .pendulum{
     position: absolute;
-    top: 105%;
+    top: 100%;
     left: 50%;
     transform-origin: 100% 0;
-    height: 80px;
-    width: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background: black;
+    height: 130px;
+    width: 10px;
+    border-radius: 10px;
+    background: rgb(54, 36, 36);
+    box-shadow: 33px 8px 24px 0px rgba(66, 68, 90, 0.52);
     animation: movePendulum 2s infinite;
     animation-timing-function: linear;
   }
   @keyframes movePendulum{
-    0%{transform: rotate(-45deg)}
-    50%{transform: rotate(45deg)}
-    100%{transform: rotate(-45deg)}
+    0%{transform: rotate(-20deg)}
+    50%{transform: rotate(20deg)}
+    100%{transform: rotate(-20deg)}
   }
   .pendulumClock .circle{
     position: relative;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    background: black;
-    top: 70px;
-    left: -11px;
+    background: rgb(54, 36, 36);
+    top: 80px;
+    left: -16px;
   }

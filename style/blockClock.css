@@ -1,12 +1,13 @@
 
   .block-clock{
     margin-right: 50px;
-    height: 250px;
+    height: 200px;
     width: 400px;
     border: 5px solid darkgray;
     border-radius: 10px;
     background: gray;
     display: flex;
+    flex-basis: 400px;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;

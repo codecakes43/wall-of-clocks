@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Tilt+Prism&display=swap');
+
 .standard-clock{
     height: 200px;
     width: 200px;
@@ -50,4 +52,47 @@
     transform-origin: 50% 80%;
     width: 1%;
     z-index: 8;
+  }
+  /* second standard clock  */
+  .secondStandard{
+    background-image: url("./secondStandardClock.jpg");
+    background-size: 120%;
+    border: 10px outset #BBB52B;
+  }
+
+  /* third standard clock  */
+  .thirdStandard{
+    background: #a98467;
+    border: 10px solid #adc178;
+    border-radius: 25%;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 32px;
+    color: #f0ead2;
+  }
+  .twelve{
+    position: absolute;
+    top: 5px;
+    left: 90px;
+  }
+  .three{
+    position: absolute;
+    top: 80px;
+    left: 180px;
+  }
+  .six{
+    position: absolute;
+    bottom: 5px;
+    left: 90px;
+  }
+  .nine{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+  }
+  .thirdStandard .hours{
+    background: #5e503f;
+  }
+  .thirdStandard .minutes{
+    background: #6c584c;
   }

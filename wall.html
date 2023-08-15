@@ -7,6 +7,18 @@
     <title>Wall</title>
 </head>
 <body>
+  <!-- Second standard clock -->
+  <section class="standard-clock secondStandard">
+    <div class="hours-container">
+      <div class="hours-hand"></div>
+    </div>
+    <div class="minutes-container">
+      <div class="minutes-hand"></div>
+    </div>
+    <div class="seconds-container">
+      <div class="seconds-hand"></div>
+    </div>
+  </section> 
     <!-- Block clock -->
     <section class="block-clock">
         <div class="yearBox"></div>
@@ -31,16 +43,29 @@
     <section class="pendulumClock">
       <div class="clockCircle">
         <div class="hourClockHand">
-          <div class="hours"></div>
+          <div class="hoursPendulum"></div>
         </div>
         <div class="minuteClockHand">
-          <div class="minutes"></div>
+          <div class="minutesPendulum"></div>
         </div>
       </div>
       <div class="pendulum">
         <div class="circle"></div>
       </div>
-    </section>  
+    </section> 
+    <!-- Third standard clock -->
+    <section class="standard-clock thirdStandard">
+      <span class="twelve">12</span>
+      <span class="three">3</span>
+      <span class="six">6</span>
+      <span class="nine">9</span>
+      <div class="hours-container">
+        <div class="hours-hand"></div>
+      </div>
+      <div class="minutes-container">
+        <div class="minutes-hand"></div>
+      </div>
+    </section> 
     <script src="mainScript.js"></script>
 </body>
 </html>

@@ -58,3 +58,48 @@ function standardClock() {
 
 blockClock();
 standardClock();
+
+let startTime = 0;
+let intervalId;
+let isRunning = false;
+
+const timeDisplay = document.querySelector('.time');
+const startButton = document.querySelector('.start');
+const stopButton = document.querySelector('.stop');
+const resetButton = document.querySelector('.reset');
+
+function updateTime() {
+  const currentTime = new Date().getTime();
+  const elapsedTime = currentTime - startTime;
+  const formattedTime = formatTime(elapsedTime);
+  timeDisplay.textContent = formattedTime;
+}
+
+function formatTime(milliseconds) {
+  const date = new Date(milliseconds);
+  const hours = date.getUTCHours().toString().padStart(2, '0');
+  const minutes = date.getUTCMinutes().toString().padStart(2, '0');
+  const seconds = date.getUTCSeconds().toString().padStart(2, '0');
+  return `${hours}:${minutes}:${seconds}`;
+}
+
+startButton.addEventListener('click', () => {
+  if (!isRunning) {
+    startTime = new Date().getTime();
+    intervalId = setInterval(updateTime, 1000);
+    isRunning = true;
+  }
+});
+
+stopButton.addEventListener('click', () => {
+  if (isRunning) {
+    clearInterval(intervalId);
+    isRunning = false;
+  }
+});
+
+resetButton.addEventListener('click', () => {
+  clearInterval(intervalId);
+  isRunning = false;
+  timeDisplay.textContent = '00:00:00';
+});

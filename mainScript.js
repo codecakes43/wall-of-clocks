@@ -1,3 +1,4 @@
+// Standard clock function 
 function standardClock() {
     const currentTime = new Date();
     const hour = currentTime.getHours();
@@ -8,9 +9,9 @@ function standardClock() {
     const minuteRotation = (minute * 6) + (second / 10);  
     const secondRotation = second * 6;  
 
-    document.querySelector('.hours-hand').style.transform = `rotate(${hourRotation}deg)`;
-    document.querySelector('.minutes-hand').style.transform = `rotate(${minuteRotation}deg)`;
-    document.querySelector('.seconds-hand').style.transform = `rotate(${secondRotation}deg)`;
+    document.querySelector('.first .hours-hand').style.transform = `rotate(${hourRotation}deg)`;
+    document.querySelector('.first .minutes-hand').style.transform = `rotate(${minuteRotation}deg)`;
+    document.querySelector('.first .seconds-hand').style.transform = `rotate(${secondRotation}deg)`;
 
     document.querySelector('.hoursPendulum').style.transform = `rotate(${hourRotation}deg)`;
     document.querySelector('.minutesPendulum').style.transform = `rotate(${minuteRotation}deg)`;
@@ -25,7 +26,10 @@ function standardClock() {
   }
 
   setInterval(standardClock, 500);
+  standardClock();
   
+// Block clock function 
+
   function blockClock(){
     const tableOfMonths = [1,2,3,4,5,6,7,8,9,10,11,12];
     const tableOfDays = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
@@ -50,14 +54,16 @@ function standardClock() {
       m = addZero(m);
       s = addZero(s);
       document.querySelector('.timeBox').innerHTML = h + ":" + m + ":" + s;
-    
+      document.querySelector('.timeDisplay').innerHTML = h + ":" + m + ":" + s;
+
     t = setTimeout(function(){
       blockClock()
       }, 500);
   }
 
 blockClock();
-standardClock();
+
+// Stoper clock function 
 
 let startTime = 0;
 let intervalId;
@@ -103,3 +109,7 @@ resetButton.addEventListener('click', () => {
   isRunning = false;
   timeDisplay.textContent = '00:00:00';
 });
+
+// Display clock
+
+// document.querySelector(".timeDisplay") = 

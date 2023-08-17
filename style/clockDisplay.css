@@ -1,0 +1,15 @@
+.clockDisplay{
+    width: 300px;
+    height: 100px;
+    background: #f1dca7;
+    border: 10px solid #ffcb69;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeDisplay{
+    color: #9b9b7a;
+    font-family: 'Caprasimo', cursive;
+    font-size: 64px;
+}

@@ -5,6 +5,7 @@
 @import url(clockDisplay.css);
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Caprasimo&family=DM+Sans:opsz,wght@9..40,300&family=Tilt+Prism&display=swap');
 body{
+    margin: 0;
     height: 100vh;
     width: auto;
     display: flex;
@@ -13,10 +14,8 @@ body{
     align-items: center;
     background: hsla(186, 33%, 94%, 1);
     background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ebf4f5", endColorstr="#b5c6e0", GradientType=1 );
-    
 }
 section{
-    margin: 10px;
+    margin: 5px;
     box-shadow: 33px 8px 24px 0px rgba(66, 68, 90, 0.52);   
 }

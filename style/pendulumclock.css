@@ -1,5 +1,4 @@
 .pendulumClock{
-  /* margin-bottom:80px; */
   position: relative;
     height: 260px;
     width: 260px;
@@ -37,7 +36,7 @@
     background: #6c584c;
     position: absolute;
     left: 98.5px;
-    top: 49px;
+    top: 55px;
     transform-origin: 0% 100%;
   }
   .pendulumClock .minutesPendulum{
@@ -46,10 +45,10 @@
     background: #b08968;
     position: absolute;
     left: 97.5px;
-    top: 31px;
+    top: 30px;
     transform-origin: 0% 100%;
   }
-  .centralCircle{
+  .pendulumClock .centralCircle{
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -61,7 +60,7 @@
 
   .pendulum{
     position: absolute;
-    top: 100%;
+    top: 105.5%;
     left: 50%;
     transform-origin: 100% 0;
     height: 130px;

@@ -35,7 +35,7 @@
     width: 5px;
     background: #6c584c;
     position: absolute;
-    left: 98.5px;
+    left: 96px;
     top: 55px;
     transform-origin: 0% 100%;
   }
@@ -44,8 +44,8 @@
     width: 2px;
     background: #b08968;
     position: absolute;
-    left: 97.5px;
-    top: 30px;
+    left: 96px;
+    top: 33px;
     transform-origin: 0% 100%;
   }
   .pendulumClock .centralCircle{
@@ -55,7 +55,7 @@
     background: #6c584c;
     position: absolute;
     top: 48%;
-    left: 46%;
+    left: 47%;
   }
 
   .pendulum{

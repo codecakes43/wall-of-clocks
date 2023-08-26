@@ -8,6 +8,7 @@
     align-items: center;
     background: #b08968;
     z-index:3;
+    margin-bottom: 150px;
   }
   .pendulumClock .clockCircle{
     position: relative;
@@ -36,7 +37,7 @@
     background: #6c584c;
     position: absolute;
     left: 96px;
-    top: 55px;
+    top: 50px;
     transform-origin: 0% 100%;
   }
   .pendulumClock .minutesPendulum{

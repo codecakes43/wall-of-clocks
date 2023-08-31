@@ -69,7 +69,7 @@ let startTime = 0;
 let intervalId;
 let isRunning = false;
 
-const timeDisplay = document.querySelector('.time');
+const timeDisplay = document.querySelector('.stoperTime');
 const startButton = document.querySelector('.start');
 const stopButton = document.querySelector('.stop');
 const resetButton = document.querySelector('.reset');
@@ -110,6 +110,3 @@ resetButton.addEventListener('click', () => {
   timeDisplay.textContent = '00:00:00';
 });
 
-// Display clock
-
-// document.querySelector(".timeDisplay") = 

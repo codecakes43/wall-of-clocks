@@ -6,7 +6,7 @@
     align-items: center;
     border: 3px solid black;
     border-radius: 50%;
-    background: #fff url(./ios_clock.svg) no-repeat center;
+    background: #fff url(assets/ios_clock.svg) no-repeat center;
     background-size: 88%;
     position: relative;
   }
@@ -16,7 +16,7 @@
     height: 20%;
     left: 48.75%;
     position: absolute;
-    top: 29%;
+    top: 30%;
     transform-origin: 50% 100%;
     width: 2.5%;
   }
@@ -41,9 +41,19 @@
     width: 1%;
     z-index: 8;
   }
+  .centralCircle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 48%;
+    left: 47%;
+    z-index: 9;
+  }
   /* second standard clock  */
   .secondStandard{
-    background-image: url("./secondStandardClock.jpg");
+    background-image: url("assets/secondStandardClock.jpg");
     background-size: 120%;
     border: 10px outset #BBB52B;
   }
@@ -57,6 +67,9 @@
     font-family: 'Tilt Prism', cursive;
     font-size: 32px;
     color: #f0ead2;
+  }
+  .thirdStandard .centralCircle{
+    background: #5e503f;
   }
   .number{
     position: absolute;

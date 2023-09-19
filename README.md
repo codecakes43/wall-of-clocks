@@ -1,6 +1,7 @@
-# Wall of clocks Application ⏰ 🕰️ 🕒
+# Wall of clocks Application ⏰ 🕰️ 🕒 ⏳
 
 This is a web application that displays various types of clocks using HTML, CSS, and JavaScript. The application showcases different clock styles and functionalities, including standard clocks, a stopper clock, a pendulum clock, and a block clock.
+You can see project here 👉👉👉 https://codecakes43.github.io/wall-of-clocks/wall.html
 
 ## Table of Contents
 
